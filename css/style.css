@@ -1,0 +1,145 @@
+* {padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    background-color: rgba(208, 215, 117, 0.888);
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    background-color: rgb(111, 138, 60);
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+
+}
+
+#header1 {
+    list-style-type: none;
+    display: flex;
+    width: 15%;
+
+
+}
+
+#header1 li a {
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: (111, 138, 60);
+    border-style: outset;
+    border-color: rgb(95, 116, 59);
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/*Estilos base para los enlaces*/
+
+a {
+    /*Todos los elementos <a>*/
+
+    display: inline-block;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: (95 116 59);
+    color: rgb(10, 10, 60);
+
+
+}
+
+a:link {
+    /*Todos los elementos <a> que tengan un atributo href definido y no hayan sido visitados*/
+    background-color: (90 116 59);
+    color: darkslateblue;
+}
+
+a:hover {
+    /*Todos los elementos <a> cuando el mouse esté posicionado sobre ellos*/
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgb(10, 10, 60);
+    color: azure;
+}
+
+a:active {
+    /*Todos los elementos <a> cuando se está haciendo click sobre ellos*/
+    background-color: yellow;
+    color: black;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: rgb(111, 138, 60);
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+div img .fotop {
+    justify-content: center;
+}
+
+#contenedor {
+    display: grid;
+    grid-template:
+        " header header" 100px
+        "h1     h1     h1" 80px
+        "img1   img2   img3" 200px
+        "footer footer footer" 50px/
+        33% auto 33%;
+}
+
+#header1 {
+    grid-area: header;
+}
+
+#titulo {
+    grid-area: h1;
+}
+
+#imagen1 {
+    grid-area: img1;
+}
+
+#imagen2 {
+    grid-area: img2;
+}
+
+#imagen3 {
+    grid-area: img3;
+}
+
+#footer {
+    grid-area: footer;
+}
+ {@media(min-width: 400px) {
+        #contenedor {
+            grid-template-columns: auto;
+            grid-template-rows: 100px 80px auto auto auto 100px;
+            grid-template-areas:
+                "header"
+                "h1"
+                "img"
+                "img"
+                "img"
+                "footer";
+        }
+    }
+}
