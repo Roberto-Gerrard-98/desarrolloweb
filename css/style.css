@@ -1,17 +1,21 @@
-* {padding: 0;
+* {
+    padding: 0;
     margin: 0;
 }
 
+/*fondo*/
 body {
     min-height: 100%;
     margin: 0;
     background-color: rgba(208, 215, 117, 0.888);
 }
 
+/*uso de pantalla*/
 html {
     height: 100%;
 }
 
+/*parte de arriba*/
 header {
     background-color: rgb(111, 138, 60);
     display: flex;
@@ -21,18 +25,19 @@ header {
 
 }
 
+
+
+/*estitlo navegador*/
 #header1 {
     list-style-type: none;
     display: flex;
-    width: 15%;
-
-
+    width: 10%;
 }
 
 #header1 li a {
     justify-content: space-evenly;
     padding: 1rem;
-    background-color: (111, 138, 60);
+    background-color: rgb(111, 138, 60);
     border-style: outset;
     border-color: rgb(95, 116, 59);
     flex-direction: row-reverse;
@@ -40,39 +45,27 @@ header {
 }
 
 /*Estilos base para los enlaces*/
-
 a {
-    /*Todos los elementos <a>*/
-
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: (95 116 59);
-    color: rgb(10, 10, 60);
-
-
-}
-
-a:link {
-    /*Todos los elementos <a> que tengan un atributo href definido y no hayan sido visitados*/
-    background-color: (90 116 59);
-    color: darkslateblue;
+    background-color: rgb(95 116 59);
+    color: rgb(2, 4, 1);
 }
 
 a:hover {
     /*Todos los elementos <a> cuando el mouse esté posicionado sobre ellos*/
     font-weight: bold;
     padding: 20px;
-    background-color: rgb(10, 10, 60);
-    color: azure;
+    background-color: rgb(100, 137, 63);
+    color: rgb(178, 193, 193);
 }
 
 a:active {
     /*Todos los elementos <a> cuando se está haciendo click sobre ellos*/
-    background-color: yellow;
+    background-color: rgb(83, 160, 79);
     color: black;
 }
-
 
 h1 {
     display: flex;
@@ -129,17 +122,80 @@ div img .fotop {
 #footer {
     grid-area: footer;
 }
- {@media(min-width: 400px) {
-        #contenedor {
-            grid-template-columns: auto;
-            grid-template-rows: 100px 80px auto auto auto 100px;
-            grid-template-areas:
-                "header"
-                "h1"
-                "img"
-                "img"
-                "img"
-                "footer";
-        }
+
+@media (max-width: 768px) {
+
+    /* Estilos para pantallas con un ancho máximo de 768px */
+    #contenedor {
+        grid-template-columns: auto auto;
+        grid-template-rows: 100px 80px auto auto auto 100px;
+        grid-template-areas:
+            "header header"
+            "h1 h1"
+            "img1 img2"
+            "img3"
+            "footer footer";
     }
+    
+}
+
+@media (max-width: 480px) {
+
+    /* Estilos para pantallas con un ancho máximo de 480px */
+    #contenedor {
+        grid-template-columns: auto;
+        grid-template-rows: 100px 80px auto auto auto 100px;
+        grid-template-areas:
+            "header"
+            "h1"
+            "img"
+            "img"
+            "img"
+            "footer";
+    }
+
+   
+}
+
+@media(min-width: 400px) {
+
+    /* Estilos para pantallas con un ancho min de 400px */
+    #contenedor {
+        grid-template-columns: auto;
+        grid-template-rows: 100px 80px auto auto auto 100px;
+        grid-template-areas:
+            "header"
+            "h1"
+            "img"
+            "img"
+            "img"
+            "footer";
+    }
+}
+
+/*centrar imagen*/
+.ecologia {
+    display: flex;
+    justify-content: center;
+}
+
+#whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
 }
