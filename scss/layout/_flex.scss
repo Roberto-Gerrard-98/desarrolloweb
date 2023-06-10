@@ -1,0 +1,67 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo-container img {
+    width: 150px;
+    /* Ajusta el ancho del logo según tus necesidades */
+    height: auto;
+    /* Ajusta la altura del logo de forma proporcional */
+}
+
+.imagencasa img {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.row {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.fotop {
+    display: flex;
+    align-items: center;
+
+    .fotop img {
+        width: 200px;
+        /* Ajusta el ancho de la imagen según sea necesario */
+        height: auto;
+        /* Ajusta la altura de la imagen según sea necesario */
+        margin-right: 10px;
+        /* Ajusta el margen derecho según sea necesario */
+    }
+
+}
+
+/*centrar imagen*/
+.ecologia {
+    display: flex;
+    justify-content: center;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }

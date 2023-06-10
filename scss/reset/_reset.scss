@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    background-color: map-get($colores_primarios, primario);
+    border: map-get($colores_primarios, terciario);
+}
+footer {
+    background-color: map-get($colores_primarios, secundario);
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+

@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+
+    /* Estilos para pantallas con un ancho máximo de 768px */
+    #contenedor {
+        grid-template-columns: auto auto;
+        grid-template-rows: 100px 80px auto auto auto 100px;
+        grid-template-areas:
+            "header header"
+            "h1 h1"
+            "img1 img2"
+            "img3"
+            "footer footer";
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    /* Estilos para pantallas con un ancho máximo de 480px */
+    #contenedor {
+        grid-template-columns: auto;
+        grid-template-rows: 100px 80px auto auto auto 100px;
+        grid-template-areas:
+            "header"
+            "h1"
+            "img"
+            "img"
+            "img"
+            "footer";
+    }
+
+
+}
+
+@media(min-width: 400px) {
+
+    /* Estilos para pantallas con un ancho min de 400px */
+    #contenedor {
+        grid-template-columns: auto;
+        grid-template-rows: 100px 80px auto auto auto 100px;
+        grid-template-areas:
+            "header"
+            "h1"
+            "img"
+            "img"
+            "img"
+            "footer";
+    }
+}

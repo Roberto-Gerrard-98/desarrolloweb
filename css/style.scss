@@ -1,0 +1,14 @@
+/*reset de css clasico */
+@import"../scss/reset/reset";
+/*definicion de colores*/
+@import"../scss/utilidades/variavles";
+/*layout*/
+@import"../scss/layout/flex";
+@import"../scss/layout/grids";
+
+@import"../scss/views/mq";
+/*compleementos*/
+@import"../scss/componentes/butom";
+@import"../scss/componentes/carousel";
+@import"../scss/componentes/nav.var.scss";
+@import"../scss/componentes/formulario";

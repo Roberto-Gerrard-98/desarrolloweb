@@ -1,0 +1,10 @@
+#carouselExampleFade {
+    width: 800px; /* ancho */
+    height: 500px; /* altura */
+    margin: 0 auto;
+
+    .carousel-item img {
+        max-height: 400px;
+        /* Tamaño deseado */
+    }
+}

@@ -1,0 +1,22 @@
+header {
+    background-color: $secundario;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 25%;
+}
+    #header1 {
+        list-style-type: none;
+        display: flex;
+        width: 15%;
+    
+    li a {
+        justify-content: space-evenly;
+        padding: 0.5rem;
+        background-color: map-get($colores_primarios, secundario);
+        border-color: map-get($colores_primarios, terciario);
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+}
