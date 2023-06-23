@@ -38,20 +38,6 @@ p {
   display: flex;
   justify-content: center;
 }
-
-.logo-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.logo-container img {
-  width: 150px;
-  /* Ajusta el ancho del logo según tus necesidades */
-  height: auto;
-  /* Ajusta la altura del logo de forma proporcional */
-}
-
 .imagencasa img {
   max-width: 100%;
   height: auto;
@@ -63,7 +49,6 @@ p {
   height: auto;
   justify-content: center;
 }
-
 .fotop {
   display: flex;
   align-items: center;
@@ -199,6 +184,7 @@ header {
   list-style-type: none;
   display: flex;
   width: 15%;
+  
 }
 #header1 li a {
   justify-content: space-evenly;
@@ -252,3 +238,10 @@ input[type="submit"]:hover {
   align-items: center;
   height: 30vh;
 }
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
