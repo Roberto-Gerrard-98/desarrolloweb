@@ -7,12 +7,14 @@
 }
 
 body {
-  min-height: 100%;
+  min-height: 99%;
   margin: 0;
   background-color: rgb(198, 232, 136);
   border: #25d366;
   grid-area: auto;
 }
+
+
 
 footer {
   background-color: rgb(111, 138, 60);
@@ -67,6 +69,10 @@ p {
   display: flex;
   justify-content: center;
 }
+.redes{
+  display: flex;
+  justify-content: center;
+}
 
 #contenedor {
   display: grid;
@@ -100,6 +106,8 @@ p {
 #footer {
   grid-area: footer;
 }
+
+
 
 @media (max-width: 768px) {
   /* Estilos para pantallas con un ancho máximo de 768px */
@@ -193,7 +201,34 @@ header {
   border-color: rgb(82, 100, 51);
   flex-direction: row-reverse;
   align-items: center;
-}/*# sourceMappingURL=style.css.map */
+}
+.container{
+  background-color: rgb(111, 138, 60);
+}
+
+.historia {
+  border: 3px solid rgb(84, 132, 80);
+  padding: 20px;
+  border-radius: 1rem;
+}
+
+.fotop{
+  border: 3px solid rgb(96, 138, 82);
+  padding: 20px;
+  border-radius: 1rem;
+}
+
+#consultas{
+  border: 3px solid rgb(96, 139, 81);
+  padding: 10px;
+  border-radius: 2%;
+
+}
+.container1{
+  border: 3px solid rgb(96, 139, 81);
+  padding: 15px;
+  border-radius: 2rem;
+}
 
 
 form {
@@ -243,5 +278,54 @@ input[type="submit"]:hover {
   top: 0;
   left: 0;
   z-index: 999;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid black;
+  margin: 20px 0;
+}
+
+.navbar{
+  background-color: rgb(111, 138, 60);
+}
+.nav-item{
+  border-radius: 1rem;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a.button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+a.button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
 }
 
